@@ -1,3 +1,4 @@
+"use strict";
 // function log(message) {
 //     console.log(message);
 // }
@@ -17,15 +18,15 @@
 */
 // let count = 5;
 // count = 'a';
-var a;
-var b;
-var c;
-var d;
-var e = [1, 2, 3];
-var f = [1, true, 'a', false];
-var ColorRed = 0;
-var ColorGreen = 1;
-var ColorBlue = 2;
+let a;
+let b;
+let c;
+let d;
+let e = [1, 2, 3];
+let f = [1, true, 'a', false];
+const ColorRed = 0;
+const ColorGreen = 1;
+const ColorBlue = 2;
 var Color;
 (function (Color) {
     Color[Color["Red"] = 0] = "Red";
@@ -37,5 +38,5 @@ var Color;
 //more simpler enum definition is enum Color {Red, Green, Blue}; //It will automatically assign 0, 1, 2 to the enum members.
 //what if we give a value to the first member of the enum? enum Color {Red = 0, Green, Blue}; //It will automatically assign 0, 1, 2 to the enum members.
 //what if we give a value to the second member of the enum? enum Color {Red = 0, Green = 2, Blue}; //It will automatically assign 0, 2, 3 to the enum members.
-var backgroundColor = Color.Red;
+let backgroundColor = Color.Red;
 console.log(backgroundColor);
